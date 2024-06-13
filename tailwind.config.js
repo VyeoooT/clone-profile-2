@@ -6,6 +6,18 @@ export default {
   ],
   theme: {
     extend: {
+      // screens
+      screens: {
+        xs: "320px",
+        sm: "375px",
+        sml: "500px",
+        md: "667px",
+        mdl: "768px",
+        lg: "960px",
+        lgl: "1024px",
+        xl: "1280px",
+      },
+
       // font family
       fontFamily: {
         bodyFont: ["Poppins", "sans-serif"],
@@ -21,9 +33,9 @@ export default {
       },
 
       // boxshadow
-      boxShadow: {
-        shadowOne: "10px 10px 19px #1e1c22, -10px -10px -19px #262e2a",
-      },
+      // boxShadow: {
+      //   shadowOne: "10px 10px 19px #030712, -10px -10px -19px #0f172a",
+      // },
     },
   },
   plugins: [],

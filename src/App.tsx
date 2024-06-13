@@ -1,8 +1,13 @@
+import NavBar from "./components/navBar"
+import Home from './components/home/index'
 
 function App() {
   return (
     <>
-      <h3 className="text-red-500 font-bold">hello</h3>
+      <div className="bg-bodyColor">
+        <NavBar />
+        <Home />
+      </div>
     </>
   )
 }

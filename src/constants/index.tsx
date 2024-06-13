@@ -1,5 +1,5 @@
 function navLinksData() {
-    const navLinksData = [
+    return [
         {
             _id: 1001,
             title: "Home",
