@@ -1,6 +1,7 @@
 import { faCss3Alt, faFacebook, faGithub, faHtml5, faLinkedin, faReact, faSquareJs } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { useTypewriter, Cursor } from "react-simple-typewriter"
+import { FadeIn } from "../effect/fadeIn"
 
 function HomeLeft() {
     const [text] = useTypewriter({
@@ -12,7 +13,7 @@ function HomeLeft() {
     })
     return (
         // home left
-        <div className="">
+        <FadeIn className="lgl:w-1/2 w-full flex flex-col gap-20">
             {/* wellcome */}
             <div className="flex flex-col gap-5">
                 <h4 className="text-lg font-normal">WELLCOME TO MY WORLD</h4>
@@ -22,7 +23,7 @@ function HomeLeft() {
                     <span className="text-designColor capitalize">john doe</span>
                 </h1>
 
-                <h2 className="flex">
+                <h2 className="text-4xl font-bold text-white">
                     a&nbsp;
                     <span>{text}</span>
                     <Cursor cursorStyle="|" cursorColor="#ff014f" />
@@ -34,9 +35,9 @@ function HomeLeft() {
             </div>
 
             {/* find me in - skills */}
-            <div className="">
+            <div className="flex xl:flex-row flex-col justify-between lgl:gap-0 gap-6">
                 {/* find me in */}
-                <div className="flex flex-col gap-4">
+                <div>
                     <h2 className="text-base font-titleFont mb-4">Find me in</h2>
 
                     <div className="flex gap-4">
@@ -55,7 +56,7 @@ function HomeLeft() {
                 </div>
 
                 {/* skills */}
-                <div className="">
+                <div>
                     <h2 className="text-base font-titleFont mb-4">Best skill on</h2>
 
                     <div className="flex gap-4">
@@ -77,7 +78,7 @@ function HomeLeft() {
                     </div>
                 </div>
             </div>
-        </div>
+        </FadeIn>
     )
 }
 
