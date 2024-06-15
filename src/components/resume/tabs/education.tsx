@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import CardResume from "./card"
+import CardResume from "../card"
 
 function Education() {
     return (
