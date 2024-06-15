@@ -3,6 +3,8 @@ import Home from './components/home'
 import Features from "./components/features"
 import Projects from "./components/projects"
 import Resume from "./components/resume"
+import Contact from "./components/contact"
+import Footer from "./components/footer"
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
         <Features />
         <Projects />
         <Resume />
+        <Contact />
+        <Footer />
       </div>
     </>
   )
